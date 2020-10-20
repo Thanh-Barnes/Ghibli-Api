@@ -20,11 +20,9 @@ fetch('https://ghibliapi.herokuapp.com/films')
     })
     .then((data) => {
 
-        const movieData = data
-
         if (data.length > 0) {
 
-            movieData.forEach((movie) => {
+            data.forEach((movie) => {
                 
                 // create a card with card class
                 const card = document.createElement('div')
